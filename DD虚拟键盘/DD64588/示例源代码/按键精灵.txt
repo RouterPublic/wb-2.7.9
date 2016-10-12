@@ -1,0 +1,13 @@
+Private Declare Function DD_mov Lib "DD32.dll" (ByVal x As Long, ByVal y As Long) As Long
+Private Declare Function DD_movR Lib "DD32.dll" (ByVal dx As Long, ByVal dy As Long) As Long
+Private Declare Function DD_btn Lib "DD32.dll" (ByVal btn As Long) As Long
+Private Declare Function DD_whl Lib "DD32.dll" (ByVal whl As Long) As Long
+Private Declare Function DD_key Lib "DD32.dll" (ByVal key As Long, ByVal flag As Long) As Long
+Private Declare Function DD_str Lib "DD32.dll" (ByVal str As String) As Long
+Private Declare Function DD_todc Lib "DD32.dll" (ByVal todc As Long) As Long
+PutAttachment ".", "*.dll"
+
+
+Call  DD_movR(20, 20)
+
+'http://www.ddxoft.com/
